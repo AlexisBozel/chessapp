@@ -96,7 +96,7 @@ const PickTheSquarePage = () => {
 
   return (
     <>
-      <h1 className="text-3xl font-bold text-center mt-20 mb-6">Select the right square</h1>
+      <h1 className="text-3xl font-bold text-center mt-40 mb-16">Select the right square</h1>
 
       <section className="flex items-center justify-center mb-10">
         <div className="flex w-full max-w-6xl justify-between px-4">
@@ -114,7 +114,7 @@ const PickTheSquarePage = () => {
           </div>
 
           {/* Échiquier */}
-          <div className="flex w-1/2 justify-center">
+          <div className="flex w-1/2 justify-center mb-10">
             <Chessboard
               onSquareClick={isTimerRunning ? setSelectedSquare : () => {}}
               selectedSquare={selectedSquare}
